@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+
+        <title>vgnz93hs</title>
+
+        <link rel="stylesheet" href="https://vgnz93hs.shop/files/style/main.css">
+        <link rel="stylesheet" href="https://vgnz93hs.shop/files/style/button.css">
+        
+        <link rel="icon" href="https://vgnz93hs.shop/files/icons/icon.jpg">
+
+        <meta name="viewport" content="width=320, height=480, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=yes" />
+
+        <style>
+            html {
+                text-align: center;
+            }
+
+            body {
+                -ms-overflow-style: none;
+                scrollbar-width: none;
+            }
+
+            .home-top {
+                padding-top: calc(10vh - 5px);
+            }
+
+            .icon-image {
+                display: inline-block;
+
+                height: 80px;
+
+                box-shadow: 0 0 50px 0 hsla(0, 0%, 0%, 0.25);
+                border-radius: 10px;
+
+                vertical-align: middle;
+            }
+
+            .icon-image-text {
+                margin: 50px 0 50px 25px;
+
+                font-size: 30px;
+
+                font-weight: 600;
+
+                text-shadow: 0 0 25px hsla(0, 0%, 0%, 0.5);
+
+                color: hsl(0, 0%, 100%);
+            }
+
+            .home-link-button-2 {
+                display: inline-block;
+
+                width: 200px;
+
+                padding: 10px 0;
+                margin-top: 20px;
+
+                background-color: hsl(0, 0%, 0%);
+
+                color: hsl(0, 0%, 100%);
+
+                text-decoration: none;
+
+                font-size: 16px;
+
+                border-radius: 10px;
+
+                font-weight: 400;
+            }
+
+            .home-contents {
+                margin: 0 20px;
+                padding: 0;
+            }
+
+            .home-news {
+                display: inline-block;
+
+                padding: 20px;
+
+                width: calc(50% - 40px);
+
+                vertical-align: top;
+            }
+
+            .home-news-foreground {
+                display: block;
+                box-shadow: 0 0 50px 0 hsla(0, 0%, 0%, 0.25);
+
+                background-color: hsla(0, 0%, 100%, 0.5);
+
+                backdrop-filter: blur(50px);
+                -webkit-backdrop-filter: blur(25px);
+
+                border-radius: 20px;
+
+                padding: 20px;
+            }
+
+            .home-news-button {
+                display: inline-block;
+
+                width: 100%;
+
+                text-align: start;
+
+                padding: 10px 0;
+
+                text-decoration: none;
+
+                color: hsl(0, 0%, 0%);
+                
+                border-bottom: solid 1px hsla(0, 0%, 0%, 0.25);
+            }
+
+            .home-news-button-title {
+                font-size: 16px;
+
+                font-weight: 600;
+
+                color: hsl(0, 0%, 0%);
+
+                margin: 0;
+            }
+
+            .home-news-button-sub-title {
+                font-size: 14px;
+
+                font-weight: 400;
+
+                margin: 0;
+            }
+
+            .home-news-title {
+                font-size: 16px;
+
+                font-weight: 600;
+
+                color: hsl(0, 0%, 0%);
+
+                padding-bottom: 10px;
+                margin: 0;
+                
+                border-bottom: solid 1px hsla(0, 0%, 0%, 0.25);
+            }
+
+            .home-news-button-image {
+                display: inline-block;
+
+                height: 45px;
+
+                vertical-align: top;
+
+                margin-right: 10px;
+            }
+
+            .home-news-button-text {
+                display: inline-block;
+
+                height: 45px;
+
+                vertical-align: top;
+            }
+
+            .home-news-button:hover .home-news-button-text {
+                text-decoration: underline;
+            }
+
+            .home-news-button:active .home-news-button-text {
+                text-decoration: none;
+            }
+
+            .home-top-image {
+                width: 100%;
+                height: 100vh;
+                overflow: hidden;
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+
+                position: absolute;
+                z-index: -1;
+
+                top: 0;
+
+                margin: 0;
+
+                position: fixed;
+                display: flex;
+
+                z-index: -20000;
+
+                overflow: hidden;
+            }
+
+            .home-top-image-button {
+                display: inline-block;
+                
+                margin: calc(55vh - 150px) 0 calc(30vh + 0px) calc(70vw - 250px);
+            }
+
+            .home-link-button {
+                display: inline-block;
+
+                width: 250px;
+
+                padding: 10px 0;
+
+                background-color: hsla(0, 0%, 100%, 0.25);
+
+                box-shadow: 0 0 50px 0 hsla(0, 0%, 0%, 0.25);
+
+                backdrop-filter: blur(15px);
+                -webkit-backdrop-filter: blur(20px);
+
+                color: rgb(0, 0, 0);
+
+                text-decoration: none;
+
+                font-size: 14px;
+
+                border-radius: 10px;
+
+                margin: 0.5em 0.5em 0.5em 0.5em;
+
+                font-weight: 600;
+
+                transition: 0.2s;
+            }
+
+            .home-link-button:hover {
+                background-color: hsla(0, 0%, 100%, 0.5);
+
+                transition: 0.2s;
+            }
+
+            .home-link-button:active {
+                background-color: hsla(0, 0%, 100%, 0.125);
+
+                transition: 0.1s;
+            }
+
+            .home-main {
+                padding: calc(20px + 1em) 12.5vw;
+                margin-top: 20px;
+
+                background-color: white;
+                box-shadow: 0 0 1000px 0 hsl(0, 0%, 0%);
+            }
+
+            .footer {
+                margin: 0;
+
+                text-align: start;
+            }
+
+            .home-about-text {
+                display: inline-block;
+
+                font-weight: 400;
+                font-size: 16px;
+
+                margin-bottom: 1em;
+            }
+
+            .home-about-title {
+                display: inline-block;
+
+                font-weight: 600;
+                font-size: 18px;
+                text-align: center;
+
+                padding: 10px 0 calc(20px + 1em) 0;
+
+                margin-bottom: calc(20px + 1em);
+
+                width: 100%;
+
+                border-bottom: solid 1px hsla(0, 0%, 0%, 0.25);
+            }
+
+            .home-link-button-3 {
+                display: inline-block;
+
+                width: 250px;
+
+                padding: 10px 0;
+
+                background-color: hsla(0, 0%, 0%, 0.6);
+
+                box-shadow: 0 0 50px 0 hsla(0, 0%, 0%, 0.25);
+
+                backdrop-filter: blur(15px);
+                -webkit-backdrop-filter: blur(20px);
+
+                color: rgb(255, 255, 255);
+
+                text-decoration: none;
+
+                font-size: 14px;
+
+                border-radius: 10px;
+
+                margin: 0.5em 0.5em 0.5em 0.5em;
+
+                font-weight: 600;
+
+                transition: 0.2s;
+            }
+
+            .home-link-button-3:hover {
+                background-color: hsla(0, 0%, 0%, 0.75);
+
+                transition: 0.2s;
+            }
+
+            .home-link-button-3:active {
+                background-color: hsla(0, 0%, 0%, 0.5);
+
+                transition: 0.1s;
+            }
+            
+            body::-webkit-scrollbar{
+                display: none;
+            }
+
+            .home-news-button-image-2 {
+                border-radius: 10px;
+            }
+
+            @media screen and (max-width: 950px) {
+                .home-news {
+                    display: block;
+                    width: calc(100% - 40px);
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="home-top">
+            <video class="home-top-image" poster="https://vgnz93hs.shop/works/18/0.jpg" playsinline preload="none" muted autoplay loop>
+                <source src="https://vgnz93hs.shop/0-1.mp4" type="video/webm" />
+                <source src="https://vgnz93hs.shop/0-0.mp4" type="video/webm" />
+            </video>
+            <img src="https://vgnz93hs.shop/files/icons/icon.svg" class="icon-image">
+    
+            <a class="icon-image-text">vgnz93hs</a><br>
+    
+            <div class="home-top-image-button">
+                <a href="https://vgnz93hs.shop/works/" class="home-link-button-3">すべての作品を見る</a><br>
+                <a href="https://vgnz93hs.shop/works/18/" class="home-link-button">この作品を見る</a>
+            </div>
+    
+            <ul class="home-contents">
+                <li class="home-news"><div class="home-news-foreground" id="home-works"></div></li><li class="home-news"><div class="home-news-foreground" id="home-news"></div></li>
+            </ul>
+        </div>
+
+        <main class="home-main">
+            <b class="home-about-title">vgnz93hsについて</b>
+            <p class="home-about-text"><a class="link-button" href="https://vgnz93hs.shop/about/">詳しくはこちら</a></p>
+        </main>
+
+        <div class="header" id="header"></div>
+        <script src="https://vgnz93hs.shop/files/js/header.js" type="text/javascript"></script>
+
+        <footer class="footer" id="footer"></footer>
+        <script src="https://vgnz93hs.shop/files/js/footer.js" type="text/javascript"></script>
+
+        <script src="https://vgnz93hs.shop/files/js/data.js" type="text/javascript"></script>
+        <script>
+            var i = pageTitle.length-1;
+            const title = [];
+            const subTitle = [];
+            const file = [];
+            const image = [];
+            const date = [];
+            const category = [];4
+            var count = 0;
+            while (count < 5 && i+1 > 0) {
+                if ("0" == pageCategory[i] || "1" == pageCategory[i] || "2" == pageCategory[i]) {
+                    title.push(pageTitle[i]);
+                    subTitle.push(pageSbTitle[i]);
+                    file.push(pageFile[i]);
+                    image.push(pageImage[i]);
+                    date.push(pageDate[i]);
+                    category.push(pageCategory[i]);
+                    count = count + 1;
+                }
+                i = i - 1;
+            }
+
+            var code = '<h2 class="home-news-title">最近の作品</h2>'
+            i = 0
+
+            while (file.length > i) {
+                code = code + '<a class="home-news-button" href="' + file[i] + '"><span class="home-news-button-image"><img src="' + image[i] + '" height="45px"></span><span class="home-news-button-text"><h2 class="home-news-button-title">' + title[i] + '</h2><p class="home-news-button-sub-title">' + subTitle[i] + '</p></span></a>'
+                i += 1
+            }
+
+            document.getElementById("home-works").innerHTML = code + '<a href="/works/" class="home-link-button-2">すべて表示</a>';
+
+            i = pageTitle.length-1
+            title2 = []
+            subTitle2 = []
+            file2 = []
+            image2 = []
+            date2 = []
+            category2 = []
+            count = 0
+            while (count < 5 && i+1 > 0) {
+                if ("3" == pageCategory[i] || "4" == pageCategory[i]) {
+                    title2.push(pageTitle[i])
+                    subTitle2.push(pageSbTitle[i])
+                    file2.push(pageFile[i])
+                    image2.push(pageImage[i])
+                    date2.push(pageDate[i])
+                    category2.push(pageCategory[i])
+                    count = count + 1
+                }
+                i = i - 1;
+            }
+
+            code = '<h2 class="home-news-title">最近の記事</h2>'
+            i = 0
+
+            while (file2.length > i) {
+                code = code + '<a class="home-news-button" href="' + file2[i] + '"><span class="home-news-button-image"><img class="home-news-button-image-2" src="' + image2[i] + '" height="45px"></span><span class="home-news-button-text"><h2 class="home-news-button-title">' + title2[i] + '</h2><p class="home-news-button-sub-title">' + subTitle2[i] + '</p></span></a>'
+                i += 1
+            }
+
+            document.getElementById("home-news").innerHTML = code;
+        </script>
+    </body>
+</html>

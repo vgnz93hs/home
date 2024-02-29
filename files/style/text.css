@@ -1,0 +1,48 @@
+a {
+    font-family: var(--main-font);
+}
+
+h1 {
+    font-family: var(--main-font);
+    
+    color: var(--text-color);
+
+    padding: 46px 0 calc(56px - 1em) 0;
+    margin: 0;
+
+    font-size: 32px;
+}
+
+h2 {
+    font-family: var(--main-font);
+
+    color: var(--text-color);
+    border-top: solid 1px var(--border-color);
+
+    padding: 56px 0 56px 0;
+    margin: calc(56px - 1em) 0 0 0;
+    
+    font-size: 24px;
+}
+
+h3 {
+    font-family: var(--main-font);
+
+    color: var(--text-color);
+
+    padding: 0 0 1em 0;
+    margin: 0;
+    
+    font-size: 16px;
+}
+
+p {
+    font-family: var(--main-font);
+
+    color: var(--text-color);
+
+    padding-bottom: 1em;
+    margin: 0;
+
+    font-size: 16px;
+}

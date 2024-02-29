@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+
+        <title>作品 - vgnz93hs</title>
+
+        <link rel="stylesheet" href="https://vgnz93hs.shop/files/style/main.css">
+        
+        <link rel="icon" href="https://vgnz93hs.shop/files/icons/icon.jpg">
+
+        <meta name="viewport" content="width=320, height=480, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=yes" />
+
+        <style>
+            .icon-image {
+                height: 100px;
+
+                margin-top: 50px;
+            }
+
+            .icon-image-text {
+                margin: 50px 0;
+
+                font-weight: 600;
+
+                color: var(--text-color);
+            }
+
+            .home-link-button {
+                display: inline-block;
+
+                width: 200px;
+
+                padding: 10px 0;
+
+                background-color: var(--text-color);
+
+                color: var(--bakeground-color);
+
+                text-decoration: none;
+
+                font-size: 16px;
+
+                border-radius: 10px;
+
+                margin-bottom: 50px;
+
+                font-weight: 400;
+            }
+
+            .home-contents {
+                margin: 0 20px;
+                padding: 0;
+            }
+
+            .home-news {
+                display: inline-block;
+
+                padding: 20px;
+
+                width: calc(50% - 40px);
+
+                vertical-align: top;
+            }
+
+            .home-news-foreground {
+                margin: calc(56px - 1em) 0 16px 0;
+
+                display: inline-block;
+
+                text-align: start;
+
+                background-color: var(--sove-color);
+
+                padding: 20px;
+
+                width: calc(100% - 40px);
+            }
+
+            .home-news-button {
+                display: inline-block;
+
+                width: 50%;
+
+                text-align: start;
+
+                padding: 10px 0;
+
+                text-decoration: none;
+
+                color: var(--text-color);
+                
+                border-top: solid 1px var(--border-color);
+
+                vertical-align: top;
+            }
+
+            .home-news-button-title {
+                font-size: 16px;
+
+                font-weight: 600;
+
+                color: var(--text-color);
+
+                margin: 0;
+            }
+
+            .home-news-button-sub-title {
+                font-size: 14px;
+
+                font-weight: 400;
+
+                margin: 0;
+            }
+
+            .home-news-title {
+                font-size: 16px;
+
+                font-weight: 600;
+
+                color: var(--text-color);
+
+                margin: 0 0 10px 0;
+            }
+
+            .home-news-button-image {
+                display: inline-block;
+
+                height: 45px;
+
+                vertical-align: top;
+
+                margin-right: 10px;
+            }
+
+            .home-news-button-text {
+                display: inline-block;
+
+                height: 45px;
+
+                vertical-align: top;
+            }
+
+            .home-news-button:hover .home-news-button-text {
+                text-decoration: underline;
+            }
+
+            .home-news-button:active .home-news-button-text {
+                text-decoration: none;
+            }
+
+            h1 {
+                font-family: var(--main-font);
+                
+                color: var(--text-color);
+
+                padding: 46px 0 calc(56px - 1em) 0;
+                margin: 0;
+
+                font-size: 32px;
+            }
+
+            .home-select {
+                width: calc(100% - 40px);
+                padding-right: 40px;
+
+                text-align: end;
+            }
+
+            .home-select-button-none {
+                display: inline-block;
+                
+                padding: 10px 14px;
+                font-size: 14px;
+                margin: 10px 0 0 10px;
+
+                background-color: var(--text-color);
+                color: var(--bakeground-color);
+
+                border-radius: 100px;
+            }
+
+            .home-select-button-active {
+                display: inline-block;
+
+                padding: 10px 14px;
+                font-size: 14px;
+                margin: 10px 0 0 10px;
+
+                background-color: var(--sove-color);
+                color: var(--text-color);
+
+                border-radius: 100px;
+
+                text-decoration: none;
+            }
+
+            .home-news-button-image-2 {
+                border-radius: 10px;
+            }
+
+            @media screen and (max-width: 950px) {
+                .home-news-button {
+                    display: block;
+                    width: 100%;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="header" id="header"></div>
+        <script src="https://vgnz93hs.shop/files/js/header.js" type="text/javascript"></script>
+
+        <main class="main">
+            <h1>作品</h1>
+            <div class="home-select" id="home-select"></div>
+            <div class="home-news-foreground" id="home-news"></div>
+        </main>
+
+        <footer class="footer" id="footer"></footer>
+        <script src="https://vgnz93hs.shop/files/js/footer.js" type="text/javascript"></script>
+
+        <script src="https://vgnz93hs.shop/files/js/data.js" type="text/javascript"></script>
+        <script>
+            function all () {
+                i = pageTitle.length-1
+                title2 = []
+                subTitle2 = []
+                file2 = []
+                image2 = []
+                date2 = []
+                category2 = []
+                count = 0
+                while (i+1 > 0) {
+                    if ("0" == pageCategory[i] || "1" == pageCategory[i] || "2" == pageCategory[i]) {
+                        title2.push(pageTitle[i])
+                        subTitle2.push(pageSbTitle[i])
+                        file2.push(pageFile[i])
+                        image2.push(pageImage[i])
+                        date2.push(pageDate[i])
+                        category2.push(pageCategory[i])
+                        count = count + 1
+                    }
+                    i = i - 1;
+                }
+
+                code = '<h2 class="home-news-title">最近の項目</h2>'
+                i = 0
+
+                while (file2.length > i) {
+                    code = code + '<a class="home-news-button" href="' + file2[i] + '"><span class="home-news-button-image"><img class="home-news-button-image-2" src="' + image2[i] + '" height="45px"></span><span class="home-news-button-text"><h2 class="home-news-button-title">' + title2[i] + '</h2><p class="home-news-button-sub-title">' + subTitle2[i] + '</p></span></a>'
+                    i += 1
+                }
+
+                document.getElementById("home-news").innerHTML = code;
+                document.getElementById("home-select").innerHTML = '<a class="home-select-button-none">すべて</a><a class="home-select-button-active" href="javascript:scratch()">SCRATCH</a><a class="home-select-button-active" href="javascript:blender()">Blender</a><a class="home-select-button-active" href="javascript:javascript()">Javascript</a>';
+            }
+
+            function scratch () {
+                i = pageTitle.length-1
+                title2 = []
+                subTitle2 = []
+                file2 = []
+                image2 = []
+                date2 = []
+                category2 = []
+                count = 0
+                while (i+1 > 0) {
+                    if ("0" == pageCategory[i]) {
+                        title2.push(pageTitle[i])
+                        subTitle2.push(pageSbTitle[i])
+                        file2.push(pageFile[i])
+                        image2.push(pageImage[i])
+                        date2.push(pageDate[i])
+                        category2.push(pageCategory[i])
+                        count = count + 1
+                    }
+                    i = i - 1;
+                }
+
+                code = '<h2 class="home-news-title">最近の項目</h2>'
+                i = 0
+
+                while (file2.length > i) {
+                    code = code + '<a class="home-news-button" href="' + file2[i] + '"><span class="home-news-button-image"><img class="home-news-button-image-2" src="' + image2[i] + '" height="45px"></span><span class="home-news-button-text"><h2 class="home-news-button-title">' + title2[i] + '</h2><p class="home-news-button-sub-title">' + subTitle2[i] + '</p></span></a>'
+                    i += 1
+                }
+
+                document.getElementById("home-news").innerHTML = code;
+                document.getElementById("home-select").innerHTML = '<a class="home-select-button-active" href="javascript:all()">すべて</a><a class="home-select-button-none">SCRATCH</a><a class="home-select-button-active" href="javascript:blender()">Blender</a><a class="home-select-button-active" href="javascript:javascript()">Javascript</a>';
+            }
+
+            function blender () {
+                i = pageTitle.length-1
+                title2 = []
+                subTitle2 = []
+                file2 = []
+                image2 = []
+                date2 = []
+                category2 = []
+                count = 0
+                while (i+1 > 0) {
+                    if ("1" == pageCategory[i]) {
+                        title2.push(pageTitle[i])
+                        subTitle2.push(pageSbTitle[i])
+                        file2.push(pageFile[i])
+                        image2.push(pageImage[i])
+                        date2.push(pageDate[i])
+                        category2.push(pageCategory[i])
+                        count = count + 1
+                    }
+                    i = i - 1;
+                }
+
+                code = '<h2 class="home-news-title">最近の項目</h2>'
+                i = 0
+
+                while (file2.length > i) {
+                    code = code + '<a class="home-news-button" href="' + file2[i] + '"><span class="home-news-button-image"><img class="home-news-button-image-2" src="' + image2[i] + '" height="45px"></span><span class="home-news-button-text"><h2 class="home-news-button-title">' + title2[i] + '</h2><p class="home-news-button-sub-title">' + subTitle2[i] + '</p></span></a>'
+                    i += 1
+                }
+
+                document.getElementById("home-news").innerHTML = code;
+                document.getElementById("home-select").innerHTML = '<a class="home-select-button-active" href="javascript:all()">すべて</a><a class="home-select-button-active" href="javascript:scratch()">SCRATCH</a><a class="home-select-button-none">Blender</a><a class="home-select-button-active" href="javascript:javascript()">Javascript</a>';
+            }
+
+            function javascript () {
+                i = pageTitle.length-1
+                title2 = []
+                subTitle2 = []
+                file2 = []
+                image2 = []
+                date2 = []
+                category2 = []
+                count = 0
+                while (i+1 > 0) {
+                    if ("2" == pageCategory[i]) {
+                        title2.push(pageTitle[i])
+                        subTitle2.push(pageSbTitle[i])
+                        file2.push(pageFile[i])
+                        image2.push(pageImage[i])
+                        date2.push(pageDate[i])
+                        category2.push(pageCategory[i])
+                        count = count + 1
+                    }
+                    i = i - 1;
+                }
+
+                code = '<h2 class="home-news-title">最近の項目</h2>'
+                i = 0
+
+                while (file2.length > i) {
+                    code = code + '<a class="home-news-button" href="' + file2[i] + '"><span class="home-news-button-image"><img class="home-news-button-image-2" src="' + image2[i] + '" height="45px"></span><span class="home-news-button-text"><h2 class="home-news-button-title">' + title2[i] + '</h2><p class="home-news-button-sub-title">' + subTitle2[i] + '</p></span></a>'
+                    i += 1
+                }
+
+                document.getElementById("home-news").innerHTML = code;
+                document.getElementById("home-select").innerHTML = '<a class="home-select-button-active" href="javascript:all()">すべて</a><a class="home-select-button-active" href="javascript:scratch()">SCRATCH</a><a class="home-select-button-active" href="javascript:blender()">Blender</a><a class="home-select-button-none">Javascript</a>';
+            }
+
+            all()
+        </script>
+    </body>
+</html>
